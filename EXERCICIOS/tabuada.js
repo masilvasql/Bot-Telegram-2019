@@ -21,14 +21,14 @@ const botoes = Extra.markup(Markup.inlineKeyboard([
 bot.start(async ctx=>{
     const nome = ctx.update.message.from.first_name
     await ctx.reply(`Olá ${nome}!`)
-    await ctx.reply(`Sempre que quiser saber uma taboada, digite /taboada`)
+    await ctx.reply(`Sempre que quiser saber uma tabuada, digite /tabuada`)
 })
 
-bot.command('taboada', ctx=> ctx.reply('Qual taboada gostaria de saber?', botoes))
+bot.command('tabuada', ctx=> ctx.reply('Qual tabuada gostaria de saber?', botoes))
 
 bot.action(/(\d+)/,async ctx=>{
     let result = parseInt(ctx.match[1])
-    await ctx.reply(`A taboada do ${result} é: `)
+    await ctx.reply(`A tabuada do ${result} é: `)
     for(i=0 ; i <=10 ; i++){
        await ctx.reply(`${result} x ${i} = ${result * i}` )
     }
