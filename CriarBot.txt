@@ -1,0 +1,5 @@
+1 - Instalar Telegram
+2 - Pesquisar por Bot Father
+3 - /newbot -->cria um novo bot
+4 - dar um nome para o bot -> todo nome deve ser terminado com "bot"
+5 - /mybots    --> este comando mostra os teus bots criados
